@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sauce Login Smoke">
+    <parameter name="password" value="secret_sauce"></parameter>
+    <test name="Valid Login Credential 1">
+        <parameter name="username" value="standard_user"></parameter>
+        <classes>
+            <class name="introToTestNG.softAssert.SoftAssertPractice"></class>
+        </classes>
+    </test>
+    <test name="Valid Login Credential 2">
+        <parameter name="username" value="locked_out_user"></parameter>
+        <classes>
+            <class name="introToTestNG.softAssert.SoftAssertPractice"></class>
+        </classes>
+    </test>
+    <test name="Valid Login Credential 3">
+        <parameter name="username" value="problem_user"></parameter>
+        <classes>
+            <class name="introToTestNG.softAssert.SoftAssertPractice"></class>
+        </classes>
+    </test>
+    <test name="Valid Login Credential 4">
+        <parameter name="username" value="performance_glitch_user"></parameter>
+        <classes>
+            <class name="introToTestNG.softAssert.SoftAssertPractice"></class>
+        </classes>
+    </test>
+</suite>

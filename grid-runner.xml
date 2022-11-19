@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests">
+    <test name="UI Functional Testing">
+        <parameter name="browser" value="gridChrome"></parameter>
+        <parameter name="userName" value="standard_user"></parameter>
+        <parameter name="passWord" value="secret_sauce"></parameter>
+        <classes>
+            <class name="com.saucedemo.tests.LogInTest"></class>
+        </classes>
+    </test>
+
+    <test name="UI Functional Testing FireFox">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="userName" value="standard_user"></parameter>
+        <parameter name="passWord" value="secret_sauce"></parameter>
+        <classes>
+            <class name="com.saucedemo.tests.LogInTest"></class>
+        </classes>
+    </test>
+</suite>

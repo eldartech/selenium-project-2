@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">selenium-testNG</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">15.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">selenium-testNG &#8212; failed</th></tr>
+<tr class="failedodd"><td>introToTestNG.alerts.DemoQAAlerts</td><td><a href="#m1"><b>simpleAlertTimeDelayTest</b>  ("Demo QA -  Simple test time delay")</a></td><td class="numi">1</td><td>1654643981715</td><td class="numi">62</td></tr>
+<tr><th colspan="5">selenium-testNG &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">introToTestNG.alerts.DemoQAAlerts</td><td><a href="#m2"><b>promptAlertTest</b>  ("Demo QA - Prompt Alert Test")</a></td><td class="numi">1</td><td>1654643975037</td><td class="numi">3751</td></tr><tr class="passedodd"><td><a href="#m3"><b>confirmAlertTest</b>  ("Confirm Alert Test")</a></td><td class="numi">1</td><td>1654643970357</td><td class="numi">4673</td></tr><tr class="passedodd"><td><a href="#m4"><b>simpleAlertTest</b>  ("Demo QA - Simple Alert Test")</a></td><td class="numi">1</td><td>1654643978788</td><td class="numi">2923</td></tr>
+</table>
+<h1>selenium-testNG</h1>
+<h2 id="m1">introToTestNG.alerts.DemoQAAlerts:simpleAlertTimeDelayTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Techtorials-iMac.local&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.3&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/5k/bltx6n9s0dv...}, goog:chromeOptions: {debuggerAddress: localhost:60652}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ff77d98f3efbf29b3581dea498dcdf0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at introToTestNG.alerts.DemoQAAlerts.simpleAlertTimeDelayTest(DemoQAAlerts.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">introToTestNG.alerts.DemoQAAlerts:promptAlertTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">introToTestNG.alerts.DemoQAAlerts:confirmAlertTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">introToTestNG.alerts.DemoQAAlerts:simpleAlertTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

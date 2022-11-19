@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Param Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="star3" value="Anna"></parameter>
+    <test name="Param Test">
+        <parameter name="star1" value="John"></parameter>
+        <parameter name="star2" value="David"></parameter>
+        <parameter name="toolName" value="firefox"></parameter>
+        <classes>
+            <class name="introToTestNG.testNgParameterization.Param"></class>
+            <class name="introToTestNG.testNgParameterization.Parameters"></class>
+        </classes>
+    </test>
+
+
+    <test name="Param Test2">
+        <parameter name="toolName" value="testng"></parameter>
+        <classes>
+            <class name="introToTestNG.testNgParameterization.Parameters"></class>
+        </classes>
+    </test>
+
+
+    <test name="Param Test3">
+        <parameter name="toolName" value="cucumber"></parameter>
+        <classes>
+            <class name="introToTestNG.testNgParameterization.Parameters"></class>
+        </classes>
+    </test>
+
+
+</suite>
